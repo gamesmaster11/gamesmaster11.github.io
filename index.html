@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0d">
+  <title>Games Master | بوابة PS4</title>
+  <meta name="description" content="Games Master — بوابة PS4، كركوك شارع الجمهورية، مجمع فريا. اتصل على 07707668192.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23080a0d'/%3E%3Cpath d='M17 20h18v6H23v12h9v-7h6v13H17zm24 0h6v24h-6z' fill='%23b6f739'/%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: dark; --bg: #08090b; --line: #635427; --gold: #e4bf69; --text: #eae6dc; --muted: #bfb8a8; --panel: #30291b; --lime: #b6f739; }
+    * { box-sizing: border-box; }
+    html { font-size: 16px; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: Tahoma, Arial, sans-serif; line-height: 1.55; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .shell { max-width: 1640px; margin: 0 auto; }
+    .hero { padding: 0 20px; background: #030607; border-bottom: 1px solid #9f7924; text-align: center; }
+    .hero img { display: block; width: min(100%, 1068px); height: auto; margin-inline: auto; }
+    .portal { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, 1fr); gap: 28px; padding: 27px 30px; max-width: 1640px; margin: 0 auto; }
+    .preview { border-left: 1px solid #554823; padding-left: 28px; min-height: 122px; }
+    .preview-top { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .eyebrow { font-size: .88rem; color: var(--gold); }
+    select { appearance: auto; border: 1px solid #765f26; border-radius: 6px; background: #17150e; color: #ffdf86; padding: 9px 12px; min-width: 106px; font: inherit; font-size: .88rem; direction: ltr; }
+    select:focus-visible, a:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; }
+    .preview h2 { margin: 11px 0 8px; color: #f2ca68; font-size: 1.3rem; font-weight: 700; }
+    .chip { display: inline-block; border: 1px solid #6e5b29; border-radius: 4px; padding: 3px 9px; font-size: .78rem; color: #e8c872; }
+    .hint { margin: 12px 0 0; color: var(--muted); font-size: .88rem; }
+    .launch { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; padding-top: 8px; text-align: center; }
+    .launch-button { display: flex; align-items: center; justify-content: center; gap: 13px; min-height: 65px; padding: 12px 20px; border: 1px solid #826423; border-radius: 8px; background: var(--panel); color: #f6d789; font-size: 1.38rem; font-weight: 700; text-decoration: none; transition: background .18s ease, border-color .18s ease; }
+    .launch-button:hover { background: #42351d; border-color: #c79b32; }
+    .launch-button .play { font-size: .95rem; }
+    .launch-note { margin: 12px 0 0; font-size: .78rem; color: #d2ba80; }
+    footer { max-width: 1580px; margin: 0 auto; padding: 21px 0 34px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--gold); font-size: .83rem; }
+    footer a { color: #f8d467; text-decoration: none; font-size: .95rem; direction: ltr; }
+    footer a:hover { text-decoration: underline; }
+    .slash { color: #89723a; padding: 0 13px; }
+    @media (max-width: 700px) {
+      .hero { padding: 0; }
+      .portal { display: flex; flex-direction: column; gap: 22px; padding: 24px 18px; }
+      .preview { border-left: 0; padding-left: 0; min-height: 0; }
+      .preview-top { align-items: flex-start; }
+      .eyebrow { max-width: 65%; }
+      .launch { padding-top: 0; }
+      .launch-button { font-size: 1.05rem; min-height: 60px; }
+      footer { margin: 0 18px; flex-wrap: wrap; padding-bottom: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell" aria-labelledby="page-title">
+    <h1 class="sr-only" id="page-title">Games Master — بوابة PS4</h1>
+    <div class="hero">
+      <img src="games-master-banner.png" alt="Games Master، مكتب بيع وشراء وصيانة أجهزة الألعاب في كركوك، شارع الجمهورية، مجمع فريا. رقم المكتب 07707668192" width="1672" height="941">
+    </div>
+    <section class="portal" aria-label="بوابة PS4">
+      <div class="preview">
+        <div class="preview-top">
+          <span class="eyebrow">معاينة طريقة التشغيل لإصدار:</span>
+          <label>
+            <span class="sr-only">إصدار PS4</span>
+            <select id="firmware">
+              <option>13.52</option><option>13.50</option><option>13.04</option><option>13.02</option><option>13.00</option>
+              <option>12.52</option><option>12.50</option><option>12.02</option><option>12.00</option>
+              <option>11.52</option><option>11.50</option><option>11.02</option><option>11.00</option>
+              <option>10.71</option><option>10.70</option><option>10.50</option><option>10.01</option><option>10.00</option>
+              <option>9.60</option><option>9.51</option><option>9.50</option><option>9.04</option><option>9.03</option><option>9.00</option>
+            </select>
+          </label>
+        </div>
+        <h2 id="version-label">GoldHEN · 13.52</h2>
+        <span class="chip">بوابة التشغيل الأصلية</span>
+        <p class="hint">تفتح ملفات التشغيل في الموقع الأصلي. اتبع تعليماته وتأكد من إصدار جهازك قبل المتابعة.</p>
+      </div>
+      <div class="launch">
+        <a class="launch-button" href="https://omarcenter.github.io/" rel="noopener noreferrer" aria-label="افتح بوابة التشغيل الأصلية من متصفح PS4">
+          <span class="play" aria-hidden="true">▶</span><span>افتح من متصفح PS4 للتشغيل</span>
+        </a>
+        <p class="launch-note">يفتح رابط التشغيل الأصلي خارج موقع Games Master.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>Games Master<span class="slash">/</span>بوابة PS4</div>
+    <a href="tel:+9647707668192" dir="ltr">07707668192</a>
+  </footer>
+  <script>
+    const firmware = document.getElementById('firmware');
+    const label = document.getElementById('version-label');
+    firmware.addEventListener('change', () => { label.textContent = 'GoldHEN · ' + firmware.value; });
+  </script>
+</body>
+</html>
