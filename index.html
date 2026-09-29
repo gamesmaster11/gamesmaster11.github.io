@@ -3,37 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080a0d">
+  <meta name="theme-color" content="#0b2341">
   <title>Games Master | بوابة PS4</title>
   <meta name="description" content="Games Master — بوابة PS4، كركوك شارع الجمهورية، مجمع فريا. اتصل على 07707668192.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23080a0d'/%3E%3Cpath d='M17 20h18v6H23v12h9v-7h6v13H17zm24 0h6v24h-6z' fill='%23b6f739'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2341'/%3E%3Cpath d='M17 20h18v6H23v12h9v-7h6v13H17zm24 0h6v24h-6z' fill='%23b6f739'/%3E%3C/svg%3E">
   <style>
-    :root { color-scheme: dark; --bg: #08090b; --line: #635427; --gold: #e4bf69; --text: #eae6dc; --muted: #bfb8a8; --panel: #30291b; --lime: #b6f739; }
+    :root { color-scheme: dark; --bg: #071629; --line: #315b83; --accent: #69c8ff; --text: #f0f8ff; --muted: #b8cde0; --panel: #12395c; --lime: #b6f739; }
     * { box-sizing: border-box; }
     html { font-size: 16px; }
-    body { margin: 0; background: var(--bg); color: var(--text); font-family: Tahoma, Arial, sans-serif; line-height: 1.55; }
+    body { margin: 0; background: linear-gradient(180deg, #0b2341, var(--bg) 75%); color: var(--text); font-family: Tahoma, Arial, sans-serif; line-height: 1.55; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    .shell { max-width: 1640px; margin: 0 auto; }
-    .hero { padding: 0 20px; background: #030607; border-bottom: 1px solid #9f7924; text-align: center; }
-    .hero img { display: block; width: min(100%, 1068px); height: auto; margin-inline: auto; }
+    .shell { width: 100%; }
+    .hero { padding: 0; background: #071326; border-bottom: 1px solid var(--line); text-align: center; }
+    .hero img { display: block; width: 100%; height: auto; }
     .portal { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, 1fr); gap: 28px; padding: 27px 30px; max-width: 1640px; margin: 0 auto; }
-    .preview { border-left: 1px solid #554823; padding-left: 28px; min-height: 122px; }
+    .preview { border-left: 1px solid var(--line); padding-left: 28px; min-height: 122px; }
     .preview-top { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
-    .eyebrow { font-size: .88rem; color: var(--gold); }
-    select { appearance: auto; border: 1px solid #765f26; border-radius: 6px; background: #17150e; color: #ffdf86; padding: 9px 12px; min-width: 106px; font: inherit; font-size: .88rem; direction: ltr; }
+    .eyebrow { font-size: .88rem; color: var(--accent); }
+    select { appearance: auto; border: 1px solid #3676a5; border-radius: 6px; background: #0c2744; color: #e4f7ff; padding: 9px 12px; min-width: 106px; font: inherit; font-size: .88rem; direction: ltr; }
     select:focus-visible, a:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; }
-    .preview h2 { margin: 11px 0 8px; color: #f2ca68; font-size: 1.3rem; font-weight: 700; }
-    .chip { display: inline-block; border: 1px solid #6e5b29; border-radius: 4px; padding: 3px 9px; font-size: .78rem; color: #e8c872; }
+    .preview h2 { margin: 11px 0 8px; color: var(--accent); font-size: 1.3rem; font-weight: 700; }
+    .chip { display: inline-block; border: 1px solid #3676a5; border-radius: 4px; padding: 3px 9px; font-size: .78rem; color: #a6e4ff; }
     .hint { margin: 12px 0 0; color: var(--muted); font-size: .88rem; }
     .launch { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; padding-top: 8px; text-align: center; }
-    .launch-button { display: flex; align-items: center; justify-content: center; gap: 13px; min-height: 65px; padding: 12px 20px; border: 1px solid #826423; border-radius: 8px; background: var(--panel); color: #f6d789; font-size: 1.38rem; font-weight: 700; text-decoration: none; transition: background .18s ease, border-color .18s ease; }
-    .launch-button:hover { background: #42351d; border-color: #c79b32; }
+    .launch-button { display: flex; align-items: center; justify-content: center; gap: 13px; min-height: 65px; padding: 12px 20px; border: 1px solid #3d9bce; border-radius: 8px; background: var(--panel); color: #e4f8ff; font-size: 1.38rem; font-weight: 700; text-decoration: none; transition: background .18s ease, border-color .18s ease; }
+    .launch-button:hover { background: #1a527b; border-color: var(--accent); }
     .launch-button .play { font-size: .95rem; }
-    .launch-note { margin: 12px 0 0; font-size: .78rem; color: #d2ba80; }
-    footer { max-width: 1580px; margin: 0 auto; padding: 21px 0 34px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--gold); font-size: .83rem; }
-    footer a { color: #f8d467; text-decoration: none; font-size: .95rem; direction: ltr; }
+    .launch-note { margin: 12px 0 0; font-size: .78rem; color: var(--muted); }
+    footer { max-width: 1580px; margin: 0 auto; padding: 21px 0 34px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--accent); font-size: .83rem; }
+    footer a { color: var(--accent); text-decoration: none; font-size: .95rem; direction: ltr; }
     footer a:hover { text-decoration: underline; }
-    .slash { color: #89723a; padding: 0 13px; }
+    .slash { color: #619bc3; padding: 0 13px; }
     @media (max-width: 700px) {
       .hero { padding: 0; }
       .portal { display: flex; flex-direction: column; gap: 22px; padding: 24px 18px; }
@@ -68,14 +68,14 @@
           </label>
         </div>
         <h2 id="version-label">GoldHEN · 13.52</h2>
-        <span class="chip">بوابة التشغيل الأصلية</span>
-        <p class="hint">تفتح ملفات التشغيل في الموقع الأصلي. اتبع تعليماته وتأكد من إصدار جهازك قبل المتابعة.</p>
+        <span class="chip">التشغيل داخل Games Master</span>
+        <p class="hint">يحدد مشغل PS4 الإصدار من الجهاز، ثم يفتح الملفات المطابقة له من موقع Games Master.</p>
       </div>
       <div class="launch">
-        <a class="launch-button" href="https://omarcenter.github.io/" rel="noopener noreferrer" aria-label="افتح بوابة التشغيل الأصلية من متصفح PS4">
-          <span class="play" aria-hidden="true">▶</span><span>افتح من متصفح PS4 للتشغيل</span>
+        <a class="launch-button" href="/games-master-host/host/index.html" aria-label="تفعيل تعديل الـPS4 داخل موقع Games Master" aria-describedby="launch-note">
+          <span class="play" aria-hidden="true">▶</span><span>تفعيل تعديل الـPS4</span>
         </a>
-        <p class="launch-note">يفتح رابط التشغيل الأصلي خارج موقع Games Master.</p>
+        <p class="launch-note" id="launch-note">يفتح ملفات GoldHEN على نطاق gamesmaster11.github.io، ويلزم جهاز PS4 بإصدار مدعوم.</p>
       </div>
     </section>
   </main>
